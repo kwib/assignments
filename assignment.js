@@ -55,14 +55,14 @@ $(function () {
     $.each(catsFemaleOwner, function (index, item) {
       var li = document.createElement("li");
 
-      li.textContent = item && item["name"] || '';
+      li.textContent = item && item.name || '';
       petsFemaleElement.appendChild(li);
     });
 
     $.each(catsMaleOwner, function (index, item) {
       var li = document.createElement("li");
 
-      li.textContent = item && item["name"] || '';
+      li.textContent = item && item.name || '';
       petsMaleElement.appendChild(li);
     });
   }
